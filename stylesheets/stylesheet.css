@@ -76,13 +76,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 46px;
   font-weight: 700;
 }
 
 h2 {
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 42px;
   background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
@@ -150,9 +150,8 @@ img {
   position: relative;
   margin: 0 auto;
   max-width: 739px;
-  padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
+  border: 5px solid #ffffff;
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
@@ -275,7 +274,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 900px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -307,7 +306,14 @@ Full-Width Styles
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
 }
-
+header img{
+  height: 160px;
+  width: 130px;
+  border: none;
+  box-shadow: none;
+  float: right;
+  margin-top: -20px;
+}
 #project_title {
   margin: 0;
   color: #fff;
@@ -376,9 +382,39 @@ Full-Width Styles
 #footer_wrap {
   background: #212121;
 }
+.top-five{height: 1200px; text-align: center;}
+.top-five a{ color: #1843AF;}
+.top-five li{
+  width: 46%;
+  height: 340px;
+  float: left;
+  margin-left: 11px;
+  margin-bottom: 11px;
+  padding: 4px 10px 2px 10px;
+    box-shadow: 0 0 5px #d6d6d6;
+  -webkit-box-shadow: 0 0 5px #d6d6d6;
+  -moz-box-shadow: 0 0 5px #d6d6d6;
+  -o-box-shadow: 0 0 5px #d6d6d6;
+  -ms-box-shadow: 0 0 5px #d6d6d6;
 
-
-
+  background: rgb(245,252,231); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(245,252,231,1) 0%, rgba(210,232,169,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,252,231,1)), color-stop(100%,rgba(210,232,169,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(245,252,231,1) 0%,rgba(210,232,169,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(245,252,231,1) 0%,rgba(210,232,169,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(245,252,231,1) 0%,rgba(210,232,169,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(245,252,231,1) 0%,rgba(210,232,169,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5fce7', endColorstr='#d2e8a9',GradientType=0 ); /* IE6-9 */
+}
+.top-five li:first-child{
+  width: 95%;
+}
+.top-five li img{
+  height: 150px;
+  width: 200px;
+  margin: 0 auto;
+}
+.top-five h4{ text-transform: uppercase;}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
