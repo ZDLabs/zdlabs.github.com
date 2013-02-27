@@ -464,6 +464,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5fce7', end
   padding: 1px 10px 5px;
   cursor: pointer;
 }
+.bottom-right-link:hover{background:url('../images/noise-orange.png') repeat,-webkit-gradient(linear,left top,left bottom,from(#ffc154),to(#e47601));
+  background:-moz-linear-gradient(top,#ffc154,#e47601);
+  box-shadow:inset 0px 0px 0px 0px #e08805;
+  color:#fff
+}
 .hidden{
   width: 840px;
   height: 230px;
