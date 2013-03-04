@@ -11,6 +11,10 @@ font-family: "DINNextLTPro-Light";
 src: url("../fonts/DIN Next [OTF]/DINNextLTPro-Light.otf");
 }
 @font-face {
+font-family: "DINNextLTPro-Regular";
+src: url("../fonts/DIN Next [OTF]/DINNextLTPro-Regular.otf");
+}
+@font-face {
 font-family: "DINNextRoundedLTPro-Bold";
 src: url("../fonts/DIN Next Rounded/DINNextRoundedLTPro-Bold.otf");
 }
@@ -480,6 +484,7 @@ margin: 1px 0 0 0;
 }
 .hidden p{
   padding: 10px 20px 10px 30px;
+  font-family: 'DINNextLTPro-Regular';
 }
 #welcome{
 }
