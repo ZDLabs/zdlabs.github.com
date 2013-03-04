@@ -2,7 +2,6 @@
 <html>
 
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="ZDLabs.github.com : What do we have here" />
@@ -22,7 +21,13 @@
           <h1 id="project_title">ZENDESK LABS<span style="display:inline-block; font-size:14px; text-shadow:none; margin-left: 4px;">Beta</span></h1>
           <h2 id="project_tagline">Is there an app for that?</h2>
         </header>
-        <div id="top-nav"></div>
+        <div id="top-nav">
+          <ul id="navbar">
+            <li><a href="basics.html">Getting Started</a></li>
+            <li><a href="#top-five-apps">Top Five</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -114,7 +119,8 @@
               <div class="column">
                 <p>You can make changes in app.js to tell it which fields to grab info from, and then in templates/links.hdbs to tell it what do to with these pieces of information; for instance, how to contruct the links that you would like to show.</p>
               </div>
-            </div>               
+            </div>    
+
 
           </ul>
 <!--         </div>
@@ -126,15 +132,15 @@
           <p>These are extensions that can be plugged right in to any account with little to no configuration to get up and running</p>
             <ul class="generic">
               <li>
-                <h4><a target="_blank" href="https://github.com/zendesk/widgets/tree/master/generic/classic/display-updatedAt-time">Updated-At Display</a></h4>
+                <h4><a target="_blank" href="https://github.com/zendesk/widgets/tree/master/generic/classic/display-updatedAt-time">Updated-At Display</a><span class="type"> - Classic</span></h4>
                 <p>Shows the date that an article was updated at in forums rather than just the date that it was created</p>
               </li>    
               <li>
-                <h4><a target='_blank' href="https://github.com/skipjac/Zendesk-Apps/tree/master/HtmlApp">Html App</a></h4>
+                <h4><a target='_blank' href="https://github.com/skipjac/Zendesk-Apps/tree/master/HtmlApp">Html App</a><span class="type"> - Lotus</span></h4>
                 <p>This is just an app to display HTML links in the ticket sidebar. Just edit the links.hdbs with the links you want to show</p>
               </li>                 
               <li>
-                <h4><a target="_blank" href="https://github.com/zendesk/widgets/tree/master/generic/classic/repsonseTime">Response Time</a></h4>
+                <h4><a target="_blank" href="https://github.com/zendesk/widgets/tree/master/generic/classic/repsonseTime">Response Time</a><span class="type"> - Classic</span></h4>
                 <p>With this you can track how much time a ticket spends in different states (new, open, pending, solved) and record response time. Requires small amount of configuration.</p>
               </li>    
             </ul>

@@ -30,4 +30,18 @@ $(document).ready(function(){
 	$('#click-quick-more').click(function(e){e.stopPropagation(); $(quick).slideToggle('slow', 'linear')});
 	$('*').not("#click-quick-more, a").click(function(){if ($(quick).is(':visible')){$(quick).slideUp();}});
 	$('.whitebox :first, #generic-section').click(function(){hideall(allBoxes)});
+
+	$('#public, #classic').hide();
+	$('#clickpublic').click(function(){
+		$('#public').show();
+		$('#classic, #private').hide();
+	});
+	$('#clickprivate').click(function(){
+		$('#private').show();
+		$('#classic, #public').hide();
+	});
+		$('#clickclassic').click(function(){
+		$('#classic').show();
+		$('#public, #private').hide();
+	});
 });
