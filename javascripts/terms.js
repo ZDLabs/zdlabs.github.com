@@ -10,7 +10,7 @@ $(document).ready(function(){
         
         //Dress it up:
         $('<div>', {'class': 'msg', 'text': 'Please Agree to the Terms and Conditions:'}).appendTo($('.square'));
-        $('<iframe>', {src: 'file://localhost/Users/ktrujillo/Projects/zdlabs.github.com/terms.html',
+        $('<iframe>', {src: 'http://zdlabs.github.com/terms.html',
 		   id:  'termframe',
 		   frameborder: 0,
 		   scrolling: 'yes'
