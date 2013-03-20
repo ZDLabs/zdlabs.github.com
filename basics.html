@@ -18,13 +18,15 @@
         <header class="inner">
 <!--           <img src="images/beaker.png">
  -->
-          <a href="/index"><h1 id="project_title">ZENDESK LABS<span style="display:inline-block; font-size:14px; text-shadow:none; margin-left: 4px;">Beta</span></h1></a>
+          <a href="/index"><h1 id="project_title">ZENLABS<span style="display:inline-block; font-size:14px; text-shadow:none; margin-left: 4px;">Beta</span></h1></a>
           <h2 id="project_tagline">Is there an app for that?</h2>
         </header>
         <div id="top-nav">
           <ul id="navbar">
             <li><a href="index.html">Home</a></li>
+            <li><a href="basics.html">Getting Started</a></li>
             <li><a href="index.html#top-five-apps">Top Five</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="http://developer.zendesk.com/" target="_blank">Developer Site</a></li>
           </ul>
         </div>
@@ -42,48 +44,27 @@
           </ul>
         </div>
 
-        <div id="classic" class="whitebox shadow explanation">
-          <h1>Classic Widgets</h1>
+      <!-- START PRIVATE LOTUS SECTION -->
+        <div id="privates" class="whitebox shadow explanation">
+          <h1>Private Apps for Lotus</h1>
           <span class="type">Overview</span><br/>
-          <p>These are the old type of Zendesk apps; they are not used in the New Zendesk (Lotus). We call them widgets to distinguish them. They are still used in the end-user facing interface, which is going to remain on the Classic Zendesk framework until the release of Help Center.</p>
-          <p>Whenever you would like to customize the user-facing web portal, you use a Classic Widget. They allow a great deal of customizability and are very easy to copy and paste from one place to another. In the agent interface, you create them by clicking on Settings >> Extensions >> Add Widget.</p>
+          <p>Private Apps for Lotus are apps that have been developed by our Client Services engineers, which have been tested and made available internally but have not gone through the app approval process that would put them into the Zendesk App Store. These are the "lab" offerings, unofficial and to be used at one's own risk.</p>
           <span class="type">Step-by-Step</span><br/>
           <h2>1.</h2>
-          <h4>Assess the needs of your Zendesk account</h4>
-          <p>If you are aiming to make a change to the appearance or the functionality of the end-user interface, then widgets are the way to go. If your problem is a styling problem, you will want to inject <a href="http://reference.sitepoint.com/css/css">CSS</a> with a CSS widget. If you want to change the functionality of the page or add or change elements (text, logos, links, etc.), then you will use a JavaScript widget.</p>
+          <h4>See if an app already exists for what you're trying to do.</h4>
+          <p>Here is a collection of apps that are a part of our Zendesk Labs collection:</p>
+          <a href="directory.html" class="dl_button dl_wide">Browse Our Directory.</a><br/>
+
+          <p>If you are interested in any of the above plugins but unable to access the source code, please <a href="mailto:support@zendesk.com">contact</a> the Zendesk Services team for assistance. If you would like to create your own apps for Zendesk, <a href="http://developer.zendesk.com/documentation/apps/introduction.html" target="_blank">Go here for more information</a> on how to do so.</p> 
           <h2>2.</h2>
-          <h4>Select an app that suits your needs. These are some common examples (requires github membership):</h4>
-          <ul class="widgetlist three">
-            <li><a href="https://github.com/zendesk/widgets/tree/master/generic/classic/FlagIncident">Flag Incident</a>
-              <p>Mark incident ticket with problem tag</p>
-            </li>
-            <li><a href="https://gist.github.com/roseleaf/e46d538102a50a056991">Mobile Customization</a>
-              <p>Mobile optimized styles for web version of zendesk</p>
-            </li>
-            <li><a href="https://support.zendesk.com/entries/21044816-Creating-conditional-drop-down-lists-using-JavaScript-widgets">Conditional Fields</a>
-              <p>Hide and show certain fields based on conditions</p>
-            </li>
-            <li><a href="https://github.com/zendesk/widgets/blob/master/generic/classic/display-updatedAt-time/display_updated.js">Display Updated-At</a>
-              <p>Show date an article was updated at, not just created</p>
-            </li>
-            <li><a href="https://github.com/zendesk/widgets/blob/master/generic/classic/followup-ticket/js_widget_follow_up.html">FollowUp Ticket</a>
-              <p>Gets values from the related closed ticket for a followup.</p>
-            </li>
-            <li><a href="https://github.com/zendesk/widgets/tree/master/generic/classic/repsonseTime">Response Time</a>
-              <p>Shows amount of time ticket spends in each state</p>
-            </li>
-          </ul>
-
+          <h4>Download and customize the app.</h4>
+          <img style="height:120px;"src="images/zipButton.png"><p>If the code is hosted on github, click on the "zip" button on its page to download it as a compressed (zip) file. When it downloads, open it to "expand" the file, and save it to somewhere accessible. On the github page, most apps have a "Readme" that explains what parts of the code you have to edit in order to make it work for you. Otherwise, look for comments in the code (lines preceeded by "//" and grayed out in a code editor) that tell you what must be changed. Make any changes necessary and save the app again.<p>
           <h2>3.</h2>
-          <h4>Copy the code from the widget and paste it into the account.</h4>
-          <img src="images/extensions.png"/><p>Go to Settings >> Extensions in the agent interface and click on "Add Widget" on the right of the widget list. Choose a type of widget - all of the examples here are JavaScript widgets, so for them you will choose "Global JavaScript." Other common cases include "Global CSS" widgets for styling, and "Custom Widgets" for displaying text, images, buttons or links on the end user interface.</p>
-          <p>A text area will open up, where you can paste in the code for your widget. Then, select the appropriate visibility from the drop-down ("anyone can see", "agents only" etc.) and then select "Create Widget" at the bottom and hit Save. That's really it! Now you may immediately see your changes live on the site.</p>
-
-        </div> 
-
-
+          <h4>Upload it into your Zendesk Account</h4>
+          <p>Now, right click on the app folder that you just changed, and select "Compress" from the menu. This creates another zip, or compressed, file. Now go into Zendesk, click on Settings >> Apps >> Create, and click on "Create a new app." Give it a name and description, and then upload the zip file that you just created and hit "Save."</p>
+        </div>
       <!-- START PUBLIC LOTUS SECTION -->
-        <div id="public" class="whitebox shadow explanation">
+        <div id="publics" class="whitebox shadow explanation">
           <h1>Public Apps for Lotus</h1>
           <span class="type">Overview</span><br/>
           <p>These are apps that can already be found in the Zendesk App Store. That means, in the agent interface, you can find them by going to Settings >> Apps >>Browse, and they offer a great deal of functionality with which to extend your Zendesk.</p>
@@ -97,47 +78,28 @@
           <p>This is an especially simple process for public apps - all the hard work is already done for you! On hovering over the app you want, click on 'Install' and a settings page will usually pop up. Here you can enter in whatever details make the app right for you, and then click on "Install." That's it, you're done!</p>
         </div> 
 
-        <div id="private" class="whitebox shadow explanation">
-          <h1>Private Apps for Lotus</h1>
+
+    <!------------- START CLASSIC SECTION ---------->
+        <div id="classics" class="whitebox shadow explanation">
+          <h1>Classic Widgets</h1>
           <span class="type">Overview</span><br/>
-          <p>Private Apps for Lotus are apps that have been developed by our Client Services engineers, which have been tested and made available internally but have not gone through the app approval process that would put them into the Zendesk App Store. These are the "lab" offerings, unofficial and to be used at one's own risk.</p>
+          <p>These are the old type of Zendesk apps; they are not used in the New Zendesk (Lotus). We call them widgets to distinguish them. They are still used in the end-user facing interface, which is going to remain on the Classic Zendesk framework until the release of Help Center.</p>
+          <p>Whenever you would like to customize the user-facing web portal, you use a Classic Widget. They allow a great deal of customizability and are very easy to copy and paste from one place to another. In the agent interface, you create them by clicking on Settings >> Extensions >> Add Widget.</p>
           <span class="type">Step-by-Step</span><br/>
           <h2>1.</h2>
-          <h4>See if an app already exists for what you're trying to do.</h4>
-          <p>Here is a collection of apps that are a part of our Zendesk Labs collection:</p>
-          <h3 class="type">Display</h3><br/>
-          <ul class="widgetlist">
-            <li><a href="https://github.com/zendesk/widgets/tree/rose/generic/apps/ConditionalFieldsApp" target="_blank">Conditional Fields</a><p>Show and hide fields in the Agent interface</p></li>
-            <li><a target='_blank' href="https://github.com/zendesk/html_app">HTML App</a><p>Shows html links in the sidebar of a ticket view</p></li>
-          </ul>
-          <h3 class="type">Comments</h3><br/>
-          <ul class="widgetlist">
-            <li><a href="https://github.com/zendesk/widgets/tree/rose/generic/apps/bitly_integration" target="_blank">Bit.ly Integration</a><p>Shorten any link in your comment with the click of a button</p></li>
-            <li><a href="https://github.com/zendesk/widgets/tree/rose/generic/apps/Rebrander" target="_blank">Rebrander</a><p>Converts non-branded urls (*.zendesk.com) to the Helpdesk Branded URL</p></li>
-          </ul>
-          <h3 class="type">Ticket Creation</h3><br/>
-          <ul class="widgetlist three">
-            <li><a href="https://github.com/zendesk/widgets/tree/master/generic/apps/Hub2SpokeTicketCreationApp" target="_blank">Create ticket in Spoke</a><p>Create related ticket from the hub account while in ticket view</p></li>
-            <li><a href="https://github.com/skipjac/Zendesk-Apps/tree/master/ProjectApp" target="_blank">Project Management</a><p>Create a parent ticket which children tickets are created from</p></li>
-            <li><a href="https://github.com/zendesk/widgets/tree/rose/generic/apps/AgentTracker" target="_blank">Agent Tracker</a>
-              <p>Adds agent name or group to the ticket when the agent views the ticket.</p>
-            </li>
-          </ul>
-          <h3 class="type">Finding Data</h3><br/>
-          <ul class="widgetlist three">
-            <li><a href="https://github.com/zendesk/widgets/tree/master/generic/apps/lotus_facebook_uid_lookup" target="_blank">Facebook Lookup</a><p>Lookup users by facebook UID</p></li>
-            <li><a href="https://github.com/skipjac/Zendesk-Apps/tree/master/OrganizationApp" target="_blank">Organization App</a><p>Displays the requester's organization data in sidebar</p></li>            
-            <li><a href="https://github.com/skipjac/Zendesk-Apps/tree/master/QuickLinksApp" target="_blank">Quick Links App</a><p>Uses data from the ticket to create links that search various websites</p></li>
-            
-          </ul>
-          <p>If you are interested in any of the above plugins but unable to access the source code, please <a href="mailto:support@zendesk.com">contact</a> the Zendesk Services team for assistance. If you would like to create your own apps for Zendesk, <a href="http://developer.zendesk.com/documentation/apps/introduction.html" target="_blank">Go here for more information</a> on how to do so.</p> 
+          <h4>Assess the needs of your Zendesk account</h4>
+          <p>If you are aiming to make a change to the appearance or the functionality of the end-user interface, then widgets are the way to go. If your problem is a styling problem, you will want to inject <a href="http://reference.sitepoint.com/css/css">CSS</a> with a CSS widget. If you want to change the functionality of the page or add or change elements (text, logos, links, etc.), then you will use a JavaScript widget.</p>
           <h2>2.</h2>
-          <h4>Download and customize the app.</h4>
-          <img style="height:120px;"src="images/zipButton.png"><p>If the code is hosted on github, click on the "zip" button on its page to download it as a compressed (zip) file. When it downloads, open it to "expand" the file, and save it to somewhere accessible. On the github page, most apps have a "Readme" that explains what parts of the code you have to edit in order to make it work for you. Otherwise, look for comments in the code (lines preceeded by "//" and grayed out in a code editor) that tell you what must be changed. Make any changes necessary and save the app again.<p>
+          <h4>Select an app that suits your needs. These are some common examples (requires github membership):</h4>
+          <a href="directory.html#classic" class="dl_button dl_wide">Browse Our Directory.</a><br/>
+
           <h2>3.</h2>
-          <h4>Upload it into your Zendesk Account</h4>
-          <p>Now, right click on the app folder that you just changed, and select "Compress" from the menu. This creates another zip, or compressed, file. Now go into Zendesk, click on Settings >> Apps >> Create, and click on "Create a new app." Give it a name and description, and then upload the zip file that you just created and hit "Save."</p>
-        </div>
+          <h4>Copy the code from the widget and paste it into the account.</h4>
+          <img src="images/extensions.png"/><p>Go to Settings >> Extensions in the agent interface and click on "Add Widget" on the right of the widget list. Choose a type of widget - all of the examples here are JavaScript widgets, so for them you will choose "Global JavaScript." Other common cases include "Global CSS" widgets for styling, and "Custom Widgets" for displaying text, images, buttons or links on the end user interface.</p>
+          <p>A text area will open up, where you can paste in the code for your widget. Then, select the appropriate visibility from the drop-down ("anyone can see", "agents only" etc.) and then select "Create Widget" at the bottom and hit Save. That's really it! Now you may immediately see your changes live on the site.</p>
+
+        </div> 
+
 
 
 
@@ -154,5 +116,5 @@
     
 
   </body>
-  <script src="javascripts/main.js"></script>
+  <script src="javascripts/tabs.js"></script>
 </html>

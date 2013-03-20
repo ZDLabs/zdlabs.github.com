@@ -286,11 +286,11 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 900px;
+  max-width: 986px;
   padding: 20px 10px;
   margin: 0 auto;
 }
-
+.inner p { max-width: 820px;}
 #forkme_banner {
   display: block;
   position: absolute;
@@ -339,7 +339,7 @@ width: 100%;
 #project_title {
   margin: 0;
   color: #8BAA49;
-  font-size: 42px;
+  font-size: 56px;
   font-weight: 700;
 /*  text-shadow: #111 0px 0px 10px;
   color: white;
@@ -490,9 +490,9 @@ margin: 1px 0 0 0;
 }
 .shadow{
 /*  border-radius: 5px;
-*/  -moz-box-shadow: 0px 2px 12px 0px #dfdfdf;
-  -webkit-box-shadow: 0px 2px 12px 0px #dfdfdf;
-  box-shadow: 0px 2px 12px 0px #dfdfdf;
+*/  -moz-box-shadow: 0px 0px 12px 0px #dfdfdf;
+  -webkit-box-shadow: 0px 0px 12px 0px #dfdfdf;
+  box-shadow: 0px 0px 12px 0px #dfdfdf;
 /*  border-radius: 10px;
 */}
 .column{
@@ -570,6 +570,10 @@ margin: -15px 0 -13px -10px;
   font-size: 20px;
   color: gray;
   border: 1px solid #E6E1E1;
+  min-width: 130px;
+  font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#directionsType li{
   background: rgb(255,255,255); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
@@ -594,25 +598,85 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .explanation h1{color: #434343; font-family: 'DINNextLTPro-Light'; font-weight: 300;}
 .explanation img{float: left; margin: -5px 15px; width: 200px; height: 200px; display: inline-block;}
 .explanation h3{margin-left: 15px; color: black; text-decoration: none; margin: 20px 0 -15px;}
-.widgetlist{width: 620px;
+.widgetlist{
 float: none;}
 .widgetlist.three{width: 910px;}
 .widgetlist li{display: inline-block; 
-  width: 230px; background: url('../images/dark-noise.jpeg'); 
-  min-height: 167px;  
+/*  width: 230px; */
+  width: 295px;
+  background: url('../images/dark-noise.jpeg'); 
+  min-height: 185px;  
   margin-bottom: 10px;text-align: center;
   margin: 5px;
-  box-shadow: 0px 2px 5px #ccc;
+  box-shadow: 0px 1px 5px #CCC;
+  border: 5px solid white;
 }
-.widgetlist li a{ background-color: white; 
+.widgetlist p{margin: 20px 15px 20px 15px;}
+.appname{ background-color: white; 
     width: 100%; display: block; height: 35px; 
     padding-top: 15px;
     font-weight: bolder;
-    background: url('../images/bg.png');
+/*    background: url('../images/bg.png');
+*/    letter-spacing: 0.1em;
+    color: #5D8B32;
   }
 .widgetlist li:nth-of-type(2){float: left; }
-.widgetlist.three li:nth-of-type(3){float: left; }
+/*.widgetlist.three li:nth-of-type(3){float: left; }
+*/.dl_button{
+  font-family: 'DINNextLTPro-Light';
+  background-color: #A4BB63;
+  height: 30px; 
+  margin-bottom: 10px; 
+  box-shadow: 0px 1px 4px  #ccc;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 130px;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  display: inline-block;
+  padding-top: 10px;
+  text-align: center;
+}
+.dl_button:hover{background-color: #88AD1E; color: whitesmoke !important;
+}
+.dl_wide{width: 230px; text-align: center;}
 
+/* ------ modal terms and conditions ----- */
+div.overdiv { filter: alpha(opacity=55);
+  -moz-opacity: .55;
+  opacity: .55;
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%; height: 100%;
+  display: none;
+}
+
+div.square { position: fixed;
+  top: 200px;
+  margin-left: 20%;
+  background-color: white;
+  border: #f9f9f9;
+  height: 375px;
+  width: 600px;
+  display: none;
+  box-shadow: 0px 0px 5px #333
+}
+.square a{margin: 5px 5px 2px 160px;}            
+div.square div.msg { 
+  color: black;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 auto;
+  width: 502px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px; 
+  margin-top: 10px;
+}
+#termframe{width: 535px; height: 230px; margin-left: 30px;}
 /*******************************************************************************
 Small Device Styles
 ******************************************************************************
