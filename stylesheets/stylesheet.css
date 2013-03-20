@@ -467,7 +467,7 @@ margin: 1px 0 0 0;
   color:#fff
 }
 .hidden{
-  width: 840px;
+  width: 919px;
   height: 230px;
   background-color: #f4f8de;
   border: 3px solid #f6f6f6;
@@ -637,6 +637,7 @@ float: none;}
   display: inline-block;
   padding-top: 10px;
   text-align: center;
+  cursor: pointer;
 }
 .dl_button:hover{background-color: #88AD1E; color: whitesmoke !important;
 }

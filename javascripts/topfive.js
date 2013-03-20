@@ -36,5 +36,7 @@ $(document).ready(function(){
 		case "#click-html-more":
 		$(htmlm).show();
 		break;
+		case "#click-conditional-more":
+		$(cond).show();
 	};
 });
