@@ -57,8 +57,8 @@
             </li>
             <div class="hidden" id="mobile-more">
               <div class="column">
-                <p>First, the default Zendesk mobile must be disabled from within the agent's settings. Go to Settings >> Channels >> Web Portal, and uncheck "Mobile Version." Then, create two widgets, a JavaScript widget (global) and a CSS widget. Populate the JS widget with <a href='https://gist.github.com/roseleaf/c5dcacfe149b8e653821' target='_blank'>this code, </a>
-                  and populate the CSS widget with <a href='https://gist.github.com/roseleaf/e46d538102a50a056991' target='_blank'> this code here. </a>
+                <p>First, the default Zendesk mobile must be disabled from within the agent's settings. Go to Settings >> Channels >> Web Portal, and uncheck "Mobile Version." Then, create two widgets, a JavaScript widget (global) and a CSS widget. Populate the JS widget 
+                  and the CSS widget with <a href='directory.html#private' target='_blank'> the code found here. </a>
                 </p>
               </div>
               <div class="column">
@@ -88,7 +88,7 @@
               </div>
             </div>                             
             <div class="hidden" id="conditional-more">
-              <div class='column'><p>One of our very top requested apps for functionality, Conditional fields is available for both Lotus and end-user (classic). For Lotus, download the app from <a target='_blank' href="https://github.com/skipjac/Zendesk-Apps/tree/master/ConditionalFieldsApp">here</a>, and for Classic, see examples <a href="https://support.zendesk.com/entries/21044816-Creating-conditional-drop-down-lists-using-JavaScript-widgets" target='_blank'>in this post.</a> The main idea is, you need to build an array of all the fields that should be hidden,</p>
+              <div class='column'><p>One of our very top requested apps for functionality, Conditional fields is available for both Lotus and end-user (classic). For Lotus, download the app from <a target='_blank' href="directory.html#private">here</a>, and for Classic, see examples <a href="directory.html#classic" target='_blank'>in this post.</a> The main idea is, you need to build an array of all the fields that should be hidden,</p>
             </div>
               <div class="column"><p>then build a 'map', like a hash, associating each user selection in the watched field with the conditional fields that it should cause to show. Then observe the watched field for changes, and upon a change, show the correct hidden field according to the map.</p>
             </div>
@@ -107,7 +107,7 @@
             </li>
             <div class="hidden" id="spoke-more">
               <div class="column">
-                <p>Many Zendesk customers use a Hub-And-Spoke model for keeping track of tickets. With this app, you can view a ticket in Lotus for the hub account, and in the sidebar, create a corresponding ticket in the spoke account. <a target='_blank' href="https://github.com/zendesk/widgets/tree/master/generic/apps/Hub2SpokeTicketCreationApp">Click here</a> to get the source code for this app. 
+                <p>Many Zendesk customers use a Hub-And-Spoke model for keeping track of tickets. With this app, you can view a ticket in Lotus for the hub account, and in the sidebar, create a corresponding ticket in the spoke account. <a target='_blank' href="directory.html#private">See this page</a> to get the source code for this app. 
                 </p>
               </div>
               <div class="column">
@@ -116,7 +116,7 @@
             </div>               
             <div class="hidden" id="quick-more">
               <div class="column">
-                <p>This app uses data from the ticket to create links that search various websites or trace an IP address. When buttons are clicked a new tab will open in the browser with the parameters from the ticket in the url. Get the source <a target='_blank' href="https://github.com/zendesk/quicklinks_app">here</a> and open it up to configure it.</p>
+                <p>This app uses data from the ticket to create links that search various websites or trace an IP address. When buttons are clicked a new tab will open in the browser with the parameters from the ticket in the url. Get the source <a target='_blank' href="directory.html#private">here</a> and open it up to configure it.</p>
               </div>
               <div class="column">
                 <p>You can make changes in app.js to tell it which fields to grab info from, and then in templates/links.hdbs to tell it what do to with these pieces of information; for instance, how to contruct the links that you would like to show.</p>
@@ -134,15 +134,15 @@
           <p>These are extensions that can be plugged right in to any account with little to no configuration to get up and running</p>
             <ul class="generic">
               <li>
-                <h4><a target="_blank" href="https://github.com/zendesk/widgets/tree/master/generic/classic/display-updatedAt-time">Updated-At Display</a><span class="type"> - Classic</span></h4>
+                <h4><a target="_blank" href="directory.html#classic">Updated-At Display</a><span class="type"> - Classic</span></h4>
                 <p>Shows the date that an article was updated at in forums rather than just the date that it was created</p>
               </li>    
               <li>
-                <h4><a target='_blank' href="https://github.com/zendesk/html_app">Html App</a><span class="type"> - Lotus</span></h4>
+                <h4><a target='_blank' href="directory.html#private">Html App</a><span class="type"> - Lotus</span></h4>
                 <p>This is just an app to display HTML links in the ticket sidebar. Just edit the links.hdbs with the links you want to show</p>
               </li>                 
               <li>
-                <h4><a target="_blank" href="https://github.com/zendesk/widgets/tree/master/generic/classic/repsonseTime">Response Time</a><span class="type"> - Classic</span></h4>
+                <h4><a target="_blank" href="directory.html#classic">Response Time</a><span class="type"> - Classic</span></h4>
                 <p>With this you can track how much time a ticket spends in different states (new, open, pending, solved) and record response time. Requires small amount of configuration.</p>
               </li>    
             </ul>
