@@ -621,6 +621,7 @@ float: none;}
     color: #5D8B32;
   }
 .widgetlist li:nth-of-type(2){float: left; }
+
 /*.widgetlist.three li:nth-of-type(3){float: left; }
 */.dl_button{
   font-family: 'DINNextLTPro-Light';

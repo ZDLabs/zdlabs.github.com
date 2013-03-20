@@ -47,4 +47,9 @@ $(document).ready(function(){
 	$('.getCode').click(function(){
 		pop.popIn();
 	})
+
+	//adjust weird box alignment
+	if ($(window).width() >=1006) {
+		$('.weirdo').css({'float': 'right','marginRight': '-30px','marginTop': '-200px'});
+	};
 });
