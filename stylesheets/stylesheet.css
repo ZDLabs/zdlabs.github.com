@@ -327,6 +327,7 @@ header img{
   float: right;
   margin-top: -20px;
 }
+.headerpic{ margin: -10px 0 20px -20px;}
 #top-nav{
     background: url('http://www.zendesk.com/wp-content/themes/zendesk-twentyeleven/img/navigation/background-normal.jpg');
 
