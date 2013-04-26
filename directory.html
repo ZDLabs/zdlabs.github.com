@@ -44,7 +44,13 @@
       <!-- START PRIVATE LOTUS SECTION -->
         <div id="privates" class="whitebox shadow explanation">
           <h1>Private Apps for New Zendesk</h1>
-                  <h3 class="type">Display</h3><br/>
+          <ul class="appTypes">
+            <li><a href="#displayApps">Display</a></li>
+            <li><a href="#commentsApps">Comments</a></li>
+            <li><a href="#creationApps">Ticket Creation</a></li>
+            <li><a href="#dataApps">Finding Data</a></li>
+          </ul>
+                  <h3 class="type" id="displayApps">Display</h3><br/>
           <ul class="widgetlist">
             <li><span class="appname">Conditional Fields</span><p>Show and hide fields in the Agent interface</p>
               <a class = "dl_button" href="index.html#click-conditional-more">Docs</a>
@@ -55,7 +61,7 @@
               <span data-ref="https://github.com/zendesk/html_app/archive/master.zip" class = "dl_button dl" id="htmlapp-dl">Download</span>
             </li>
           </ul>
-          <h3 class="type">Comments</h3><br/>
+          <h3 class="type" id="commentsApps">Comments</h3><br/>
           <ul class="widgetlist">
             <li><span class="appname">Bit.ly Integration</span><p>Shorten any link in your comment with the click of a button</p>
 <!--               <a class = "dl_button" href="#">Docs</a>
@@ -66,7 +72,7 @@
  -->              <span data-ref="https://github.com/zendesk/rebrander_app/archive/master.zip" class="dl_button dl" id="rebranderapp-dl">Download</span>
             </li>
           </ul>
-          <h3 class="type">Ticket Creation</h3><br/>
+          <h3 class="type" id="creationApps">Ticket Creation</h3><br/>
           <ul class="widgetlist">
             <li><span class="appname">Create ticket in Spoke</span><p>Create related ticket from the hub account while in ticket view</p>
 <!--               <a class = "dl_button" href="#">Docs</a>
@@ -82,7 +88,7 @@
  -->              <span data-ref="https://github.com/zendesk/agent_tracker_app/archive/master.zip" class = "dl_button dl"  id="trackerapp-dl">Download</span>
             </li>
           </ul>
-          <h3 class="type">Finding Data</h3><br/>
+          <h3 class="type" id="dataApps">Finding Data</h3><br/>
           <ul class="widgetlist three">
             <li><span class="appname">Facebook Lookup</span><p>Lookup users by facebook UID</p>
 <!--               <a class = "dl_button" href="#">Docs</a>
