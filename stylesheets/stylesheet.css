@@ -692,19 +692,20 @@ div.square div.msg {
 
 .appTypes{
   list-style: none;
-  width: 100%;
-  background-color: #EAEAEA;
-  background-image: -moz-linear-gradient(#FAFAFA, #EAEAEA);
-  background-image: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
-  background-image: linear-gradient(#FAFAFA, #EAEAEA);
-  height: 35px;
+  width: 100px;
+
+  height: 145px;
   border: 1px solid #eee;
   border-radius: 4px;
   font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.appTypes li{ display: inline;
-  width: 25%;
+.appTypes li{ 
+  width: 100%;
   float: left;
+  background-color: #EAEAEA;
+  background-image: -moz-linear-gradient(#FAFAFA, #EAEAEA);
+  background-image: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
+  background-image: linear-gradient(#FAFAFA, #EAEAEA);
 }
 .appTypes a {
 display: block;
